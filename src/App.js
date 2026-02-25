@@ -4,10 +4,24 @@
 // Tailwind CSS kullanarak butonların hover durumunda farklı efektler eklemek için hangi class'ları kullanabilirsiniz?
 export default function ButtonVariants() {
   return (
-    <span className='wrapper'>
-      <button className='button-create'>Create</button>
-      <button className='button-update'>Update</button>
-      <button className='button-delete'>Delete</button>
-    </span>
-  )
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="flex flex-col items-center gap-4">
+        <div className="flex gap-4">
+          <button className="text-white bg-emerald-500 rounded-md w-20 h-20">
+            Create
+          </button>
+          <button className="text-white bg-amber-600 rounded-md w-20 h-20">
+            Update
+          </button>
+          <button className="text-white bg-red-600 rounded-md w-20 h-20">
+            Delete
+          </button>
+        </div>
+
+        <button className="text-white bg-blue-400 rounded-md w-80 h-9">
+          Testing Tailwind
+        </button>
+      </div>
+    </div>
+  );
 }
